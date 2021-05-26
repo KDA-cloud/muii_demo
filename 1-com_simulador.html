@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>MUII</title>
+	<meta name="keywords" content="MUI">
+	<meta name="description" content="MUII -  Calcula tu crédito en línea ya">
+	<meta name="author" content="Imaginemos AE">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			  
+    <!-- CSS
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="assets/css/main.min.css">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    
+   	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  <style>
+  	body{
+  		padding-top: 30px;
+  	}
+  	.creditSimulator{
+  		max-width: 460px;
+  		margin: 0 auto;
+  	}
+  </style>
+
+  </head>
+	<body>
+
+		<div class="creditSimulator">
+			<h2 class="title">Calcula tu crédito en línea ya</h2>
+			<div class="box">
+				<fieldset class="flex-center-center">
+					<label>Soy</label>
+					<ul class="inline">
+	          <li>
+	            <label class="control control--checkbox">Empleado
+	              <input type="radio" checked="checked" name="radio3" />
+	              <div class="control__indicator"></div>
+	            </label>
+	          </li>
+	          <li>
+	            <label class="control control--checkbox">Empresario / Independiente
+	              <input type="radio" name="radio3" />
+	              <div class="control__indicator"></div>
+	            </label>
+	          </li>
+	        </ul>
+				</fieldset>
+        <fieldset class="divslider">
+        	<label>¿Cuánto dinero necesitas?</label>
+        	<input class="slider" data-slider-id='slider' type="text" data-slider-min="100000" data-slider-max="750000" data-slider-step="10000" data-slider-value="380000"/>
+        	<span class="ticksLabels left">$100.000</span>
+        	<span class="ticksLabels right">$750.000</span>
+        </fieldset>
+        <fieldset class="divslider">
+        	<label>¿Cuándo podrías pagarlo?</label>
+        	<input class="slider" data-slider-id='slider' type="text" data-slider-min="5" data-slider-max="150" data-slider-step="1" data-slider-value="100"/>
+        	<span class="ticksLabels left">5 Dias</span>
+        	<span class="ticksLabels right">150 Dias</span>
+        </fieldset>
+				<p class="total">Total a pagar: <span>$485.443</span></p>
+				<p class="small">Este valor corresponde a una simulación de tu crédito según los datos seleccionados por ti.</p>
+				<div class="details">
+					<div class="item">
+						<label>Monto solicitado:</label>
+						<p class="value">$380.000</p>
+					</div>
+					<div class="item">
+						<label>Intereses<span>(25% EA)</span></label>
+						<p class="value">$ 6.174<a href="#" data-toggle="tooltip" data-placement="top" title="El interés corriente aplicado a tu crédito es del 25%EA (Efectivo anual) sobre el capital adeudado. Esta tasa es inferior a la tasa de usura establecida por las autoridades nacionales Mayo/2021: 25.83%. Este interés se calcula diariamente por el plazo que escojas para pagar tu crédito." class="tooltipWhite icon-info"></a></p>
+					</div>
+					<div class="item">
+						<label>Aval <span>(opcional)</span></label>
+						<p class="value">$ 60.594<a href="#" data-toggle="tooltip" data-placement="top" title="El interés corriente aplicado a tu crédito es del 25%EA (Efectivo anual) sobre el capital adeudado. Esta tasa es inferior a la tasa de usura establecida por las autoridades nacionales Mayo/2021: 25.83%. Este interés se calcula diariamente por el plazo que escojas para pagar tu crédito." class="tooltipWhite icon-info"></a></p>
+					</div>
+					<div class="item">
+						<label>Plataforma<span>(opcional)</span></label>
+						<p class="value">$ 112.500<a href="#" data-toggle="tooltip" data-placement="top" title="El interés corriente aplicado a tu crédito es del 25%EA (Efectivo anual) sobre el capital adeudado. Esta tasa es inferior a la tasa de usura establecida por las autoridades nacionales Mayo/2021: 25.83%. Este interés se calcula diariamente por el plazo que escojas para pagar tu crédito." class="tooltipWhite icon-info"></a></p>
+					</div>
+					<div class="item">
+						<label>Descuento<span>(por inclusión financiera)</span></label>
+						<p class="value">$ -80.000<a href="#" data-toggle="tooltip" data-placement="top" title="El interés corriente aplicado a tu crédito es del 25%EA (Efectivo anual) sobre el capital adeudado. Esta tasa es inferior a la tasa de usura establecida por las autoridades nacionales Mayo/2021: 25.83%. Este interés se calcula diariamente por el plazo que escojas para pagar tu crédito." class="tooltipWhite icon-info"></a></p>
+					</div>
+					<div class="item">
+						<label>IVA <span>(19%)</span></label>
+						<p class="value">$ 6.175</p>
+					</div>
+					<div class="item">
+						<label>Total</label>
+						<p class="value">$ 485.443</p>
+					</div>
+				</div>
+				<div class="contcenter">
+					<button class="button medium primary">Solicita tu crédito</button>
+				</div>
+			</div>
+		</div>
+
+	<!-- Script
+	  ================================================== -->
+	 <script src="assets/js/main.min.js"></script>
+	
+	
+	</body>
+</html>
