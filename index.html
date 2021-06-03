@@ -284,7 +284,18 @@
 	<!-- Script
 	  ================================================== -->
 	 <script src="assets/js/main.min.js"></script>
-	
+	<script>
+		const selector = "emprender-credit-simulator";
+		function configureSimulator() {
+			const todoListElement = document.querySelector(selector);
+			todoListElement.addEventListener('creditRequested', event => {
+				console.log("Credit requested", event.detail);
+				const url = 'http://20.94.128.153/credito/';
+				window.open(url, '_blank');
+			})
+		}
+		customElements.whenDefined(selector).then(configureSimulator);
+	</script>
 	
 	</body>
 </html>
