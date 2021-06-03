@@ -41,7 +41,7 @@
 								<a href="#">Conoce el Paso a Paso</a>
 								<a href="#">¿Qué necesitas?</a>
 								<a href="#">Costos</a>
-								<a href="1-login.html" class="button small secondary">Ingresa<i class="icon-profile"></i></a>
+								<a id="login-button" class="button small secondary">Ingresa<i class="icon-profile"></i></a>
 							</nav>
 						</div>
 						<div class="outer-menu">
@@ -286,15 +286,29 @@
 	 <script src="assets/js/main.min.js"></script>
 	<script>
 		const selector = "emprender-credit-simulator";
+		function constructLoginLink() {
+			const host = window.location.href.split('/').slice(0, 3).join('/');
+			const initOptions = {
+				url: host + "/auth",
+				realm: "muii",
+				clientId: "muii-landing",
+			};
+			const loginURL = `${initOptions.url}/realms/${initOptions.realm}/protocol/openid-connect/auth?client_id=${initOptions.clientId}&response_mode=fragment&response_type=code&login=true&redirect_uri=${window.location}`;
+			const loginButton = document.querySelector("#login-button");
+			loginButton.addEventListener('click', event => {
+				window.location.assign(loginURL);
+			});
+		}
 		function configureSimulator() {
 			const todoListElement = document.querySelector(selector);
 			todoListElement.addEventListener('creditRequested', event => {
 				console.log("Credit requested", event.detail);
-				const url = 'http://20.94.128.153/credito/';
-				window.open(url, '_blank');
+				const url = '/credito/';
+				window.location.assign(url);
 			})
 		}
 		customElements.whenDefined(selector).then(configureSimulator);
+		constructLoginLink();
 	</script>
 	
 	</body>

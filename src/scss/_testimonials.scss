@@ -1,0 +1,101 @@
+section.weAreMUII{
+	.bg{
+		background-color: #E73C4A;
+		.text{
+			p{
+				color: #FFFFFF;
+				font-style: italic;
+				font-weight: 600;
+				font-size: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+			&.left{ text-align: left; }
+			&.right{ text-align: right; }
+		}
+		div.img{
+			position: relative;
+			bottom: -20px;
+			text-align: center;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	.testimonials{
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		top: -40px;
+		.item{
+			span.photo{
+				display: block;
+				margin-bottom: 10px;
+				img{
+					max-width: 100%;
+				}
+			}
+			p{
+				font-weight: 600;
+				font-size: 12px;
+				margin-bottom: 0;
+				line-height: 18px;
+			}
+		}
+	}
+}
+
+
+
+/* Responsive
+============================================================ */
+@media (min-width:1200px) {
+
+}
+
+@media (max-width:1200px) {
+	
+}
+
+@media (max-width:991px) {
+  section.weAreMUII{
+  	.bg{
+  		padding: 0 0 50px 0;
+  		.text{
+	  		&.left, &.right{
+	  			text-align: center;
+	  		}
+	  	}
+  	}
+  	
+  }
+}
+
+@media (max-width:767px) {
+  section.weAreMUII{
+  	.bg{
+  		padding: 20px 0 0 0;
+  		div.img{
+  			bottom: -5px;
+  			margin-top: 20px;
+  		}
+  	}
+  	.testimonials{
+  		top: 0;
+  		padding-top: 20px;
+  		.item{
+  			margin-bottom: 15px;
+  			span.photo{
+  				img{
+  					max-height: 136px;
+  				}
+  			}
+  		}
+  	}
+  }
+}
+
+@media (max-width:650px) {
+	
+}

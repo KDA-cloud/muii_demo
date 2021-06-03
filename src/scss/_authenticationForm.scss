@@ -1,0 +1,62 @@
+section.authenticationForm{
+	position: relative;
+	margin: 20px 0;
+	min-height: 380px;
+	h2.title{
+		color: var(--tertiary-color);
+		font-family: var(--secondary-font);
+		font-size: 26px;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	h5{
+		font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    line-height: 18px;
+    max-width: 450px;
+    margin: 0 auto 20px;
+	}
+	.boxForm{
+		background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 20px 25px;
+    position: relative;
+    z-index: 1;
+	}
+	.link{
+		color: var(--tertiary-color);
+		display: inline-block;
+		font-weight: 600;
+		font-size: 13px;
+		font-style: italic;
+	}
+}
+
+/* Responsive
+============================================================ */
+@media (min-width:1200px) {
+
+}
+
+@media (max-width:1200px) {
+	
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+  section.authenticationForm{
+  	margin-bottom: 0;
+  	min-height: auto;
+  }
+}
+
+@media (max-width:650px) {
+	
+}

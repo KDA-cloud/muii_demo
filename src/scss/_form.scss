@@ -1,0 +1,322 @@
+
+/* Hacks
+============================================================ */
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #3C516C;
+  -webkit-box-shadow: 0 0 0px 1000px #F4FAFF inset;
+  transition: background-color 5000s ease-in-out 0s;
+  outline: none !important;
+}
+
+input[type="file"]:focus, 
+input[type="radio"]:focus, 
+input[type="checkbox"]:focus {
+    outline: none;
+    outline-offset: -2px;
+}
+
+*:focus{ outline: none !important; }
+
+fieldset{
+	position: relative;
+}
+
+/* Alerts
+============================================================ */
+.alerts{
+  text-align: center;
+  &.red{
+    color: #E13D4C;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+}
+
+/* Alerts
+============================================================ */
+.steps{
+  padding-left: 50px;
+  position: relative;
+  .icon{
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+  }
+  .cont{
+    p{
+      color: var(--primary-color);
+      margin-bottom: 5px;
+      font-weight: 600;
+      text-align: left;
+      font-style: italic;
+      span.number{
+        display: block;
+        float: left;
+        font-weight: 700;
+        font-size: 25px;
+        display: inline-block;
+        margin-right: 7px;
+        position: relative;
+        top: -2px;
+      }
+    }
+    .progress{
+       background-color: #EFEFEF;
+       border-radius: 6px;
+       height: 10px;
+       max-width: 400px;
+    }
+    .progress-bar{
+      background-color: var(--primary-color); 
+    }
+  }
+}
+
+/* Forms
+============================================================ */
+.form{
+  fieldset{
+    margin-bottom: 15px;
+  }
+}
+
+fieldset{
+  margin-bottom: 15px;
+  label{
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    span.req{
+      color: #DF020A;
+      display: inline-block;
+      padding-left: 5px;
+    }
+  }
+  input.text{
+    background-color: #EEEEEE;
+    border: 1px solid #EAEAEA;
+    border-radius: 7px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 10px;
+    text-align: center;
+    width: 100%;
+    &:focus{
+      box-shadow: 0 0 10px rgba(0,137,255,0.3) inset;
+      border: 1px solid rgba(0,137,255,0.7);
+    }
+  }
+  select.form-control{
+    background-color: #EEEEEE;
+    border: 1px solid #EAEAEA;
+    border-radius: 7px;
+    font-size: 12px;
+    height: 36px;
+    line-height: 37px;
+    padding: 0px 10px;
+    width: 100%;
+    &:focus{
+      box-shadow: 0 0 10px rgba(25,148,255,0.3) inset;
+      border: 1px solid rgba(25,148,255,0.5);
+    }
+  }
+  select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 8px;
+  } 
+}
+
+fieldset.password{
+  position: relative;
+  .showpassword{
+    border: none;
+    cursor: pointer;
+    color: #999999;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    &:hover{
+      color: var(--primary-color);
+    }
+  }
+}
+
+/* Buttons
+============================================================ */
+.button{
+	box-shadow: none !important;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-family: var(--secondary-font);
+  font-weight: 600;
+  display: inline-block;
+	text-transform: none;
+	text-align: center;
+  max-width: 100%;
+  &.small{
+    height: 26px;
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 26px;
+    i{
+      display: inline-block;
+      font-size: 16px;
+      position: relative;
+      top: 3px;
+      margin-left: 5px;
+    }
+  }
+  &.medium{
+		height: 40px;
+    font-size: 15px;
+    padding: 0 40px;
+    line-height: 40px;
+    &.withicon{
+      text-align: left;
+      padding: 0px 20px 0 25px;
+      i{
+        display: inline-block;
+        font-size: 20px;
+        position: relative;
+        top: 4px;
+        margin-left: 15px;
+      }
+    }
+	}
+	&.primary{
+		background-color: var(--primary-color);
+		color: var(--secondary-color);
+		&:hover{
+			background-color: var(--secondary-color);
+      color: var(--primary-color);
+		}
+	}
+  &.secondary{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+}
+
+ul.inline{
+	display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+	li{
+		margin-right: 8px;
+	}
+}
+
+fieldset{
+  label.control {
+    color: #4A4A4A;
+    display: block;
+    position: relative;
+    padding-left: 26px !important;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left !important;
+  }
+  label.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+.control input:checked ~ .control__indicator {
+  background: var(--primary-color);
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: var(--primary-color);
+}
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+
+
+
+
+
+

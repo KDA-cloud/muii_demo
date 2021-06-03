@@ -1,0 +1,206 @@
+.creditSimulator{
+  text-align: center;
+  h2.title{
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: var(--secondary-font);
+    margin: 0;
+    font-size: 20px;
+    padding: 12px 25px 10px 25px;
+    text-align: center;
+    display: inline-block;
+  }
+  .box{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 20px 25px;
+    p.total{
+      color: #00779A;
+      font-family: var(--secondary-font);
+      font-size: 20px;
+      margin-bottom: 5px;
+      + .small{
+        color: #111111;
+        font-size: 9px;
+        font-style: italic;
+        margin: 0 auto 10px;
+        line-height: 14px;
+        max-width: 260px;
+      }
+    }
+    fieldset{
+      margin-bottom: 10px;
+      label:not(.control){
+        color: var(--primary-color); 
+        font-family: var(--secondary-font);
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 5px;
+        width: 100%;
+      }
+      label.control{
+        line-height: 25px;
+      }
+      &.divslider{
+        margin-bottom: 30px;
+      }
+      ul.inline{
+        margin-bottom: 10px;
+      }
+    }
+    .details{
+      margin-bottom: 10px;
+      .item{
+        padding-bottom: 5px;
+        &:after{
+          content: "\0020";
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
+        label{
+          display: block;
+          float: left;
+          font-weight: 600;
+          font-size: 14px;
+          margin-bottom: 0;
+          width: 70%;
+          text-align: left;
+          line-height: 16px;
+          span{
+            display: inline-block;
+            font-size: 10px;
+            padding-left: 2px;
+          }
+        }
+        p{
+          display: block;
+          float: right;
+          font-weight: 600;
+          width: 30%;
+          text-align: right;
+          line-height: 16px;
+          margin-bottom: 0;
+          .tooltipWhite{
+            color: #8C8C8C;
+            font-size: 12px;
+            padding-left: 5px;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+      .tooltip.show{
+        opacity: 1;
+      }
+      .tooltip-inner{
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        color: #111111;
+        max-width: 220px;
+        line-height: 14px;
+        font-size: 12px;
+      }
+      .bs-tooltip-auto[x-placement^=top] .arrow:before, 
+      .bs-tooltip-top .arrow:before{
+        border-top-color: #FFFFFF;
+      }
+    }
+    .ticksLabels{
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 15px;
+      position: relative;
+      top: -4px;
+      &.left{
+        display: block;
+        float: left;
+      }
+      &.right{
+        display: block;
+        float: right;
+      }
+    }
+  }
+}
+
+
+/* Custom Slider
+============================================================ */
+.slider.slider-horizontal .slider-track{
+  height: 6px;
+}
+.slider.slider-horizontal{
+  width: 100%;
+}
+.slider-handle{
+  background: var(--primary-color);
+  box-shadow: none;
+  top: -2px;
+}
+.slider-selection{
+  background: var(--primary-color);
+}
+
+/* Tooltip Slider
+============================================================ */
+.slider  .tooltip-inner {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+}
+
+.slider  .bs-tooltip-auto[x-placement^=bottom] .arrow:before, 
+.slider  .bs-tooltip-bottom .arrow:before{
+  border-bottom-color: var(--primary-color);
+}
+
+
+/* Responsive
+============================================================ */
+@media (min-width:1200px) {
+
+}
+
+@media (max-width:1200px) {
+	
+}
+
+@media (max-width:991px) {
+  
+}
+
+@media (max-width:767px) {
+  .creditSimulator{
+    .box{
+      .details{
+        .item{
+          label{
+            width: 50%;
+          }
+          p{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:478px) {
+	.creditSimulator{
+    h2.title{
+      font-size: 18px;
+      max-width: 220px;
+    }
+  }
+}

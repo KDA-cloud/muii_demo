@@ -1,0 +1,157 @@
+@import "header";
+@import "banner";
+@import "creditSimulator";
+@import "stepsDigitalCredit";
+@import "requirementsDigitalCredit";
+@import "testimonials";
+@import "registrationForm";
+@import "authenticationForm";
+@import "validation";
+@import "employeeRegistration";
+@import "fonts";
+@import "form";
+@import "footer";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --primary-color: #51215B;
+  --secondary-color: #F8B23F;
+  --tertiary-color: #00779A;
+  --quaternary-color: #E13D4C;
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: Varela Round,sans-serif;
+}
+
+/* General Classes
+
+============================================================ */
+a {
+	color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+  	color: inherit;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    outline: none;
+  }
+}
+.clearfix:after, html:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.contcenter, .contcenter *{ text-align: center !important; }
+.pt0{ padding-top: 0 !important; }
+.mb10{ margin-bottom: 10px !important; }
+.mb20{ margin-bottom: 20px !important; }
+.mb30{ margin-bottom: 30px !important; }
+.mb40{ margin-bottom: 40px !important; }
+.mb0{ margin-bottom: 0px !important; }
+.onlymobile{ display: none !important; }
+.posinherit{ position: inherit !important; }
+
+.colorPrimary{ color: var(--primary-color) !important; }
+.colorSecondary{ color: var(--secondary-color) !important; }
+.colorTertiary{ color: var(--tertiary-color) !important; }
+.colorQuaternary{ color: var(--quaternary-color) !important; }
+
+/* #Site Styles
+================================================== */
+body {
+  background: #FFFFFF;
+  color: #4A4A4A;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 22px;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+	html, body{ overflow-x: hidden; }
+
+.flex-center-center{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.p5 [class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.p5 .row{
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.ilustrationsSides{
+  position: relative;
+  .col{
+    &:after{
+      background-image: url('../img/illustration2.svg');
+      background-repeat: no-repeat;
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -178px;
+      left: -320px;
+      height: 355px;
+      width: 303px;
+    }
+    &:before{
+      background-image: url('../img/illustration3.svg');
+      background-repeat: no-repeat;
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -137px;
+      right: -300px;
+      height: 273px;
+      width: 275px;
+    }
+  }
+}
+
+/* Responsive
+============================================================ */
+@media (min-width:1200px) {
+
+}
+
+@media (max-width:1200px) {
+	
+}
+
+@media (max-width:991px) {
+  .onlymobile{ display: block !important; }
+}
+
+@media (max-width:767px) {
+  
+}
+
+@media (max-width:650px) {
+	
+}
